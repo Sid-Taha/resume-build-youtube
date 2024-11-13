@@ -1,0 +1,154 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  background: #f9f9f9;
+}
+
+.resumeDiv{
+  width: 70%;
+  border: 2px solid black;
+}
+
+header{
+  width: 100%;
+  height: 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background: linear-gradient(rgba(41, 168, 218, 0.63), rgba(32, 141, 214, 0.562));
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.white{
+  color: white;
+}
+
+header img{
+  width: 150px;
+  height: 160px;
+  border-radius: 50%;
+}
+
+.content{
+  width: 100%;
+  display: flex;
+}
+
+.content aside{
+  width : 30%; 
+  padding-left: 50px;
+  padding-bottom: 50px;
+  background: #f9f9f9;
+}
+
+.contact,
+.education,
+.skill,
+.language{
+  margin-bottom: 30px;
+}
+
+.contact h2,
+.education h2,
+.skill h2,
+.language h2,
+.experience h2,
+.refrence h2{
+  border-bottom: 2px solid #00BFFF;
+  margin-bottom: 20px;
+  padding-bottom: 3px;
+  color: #00BFFF;
+}
+
+.education{
+  line-height: 20px;
+}
+
+.skill ul{
+  margin-left: 18px;
+}
+
+.main-content{
+  width: 70%;
+  padding-left: 50px;
+  background-color: white;
+}
+.experience-items{
+  margin-bottom: 54px;
+}
+
+.experience-items p{
+  margin-bottom: 5px;
+}
+
+.experience-items ul{
+  margin-left: 18px;
+  margin-top: 15px;
+}
+
+.btnDiv{
+  width: 70%;
+  padding: 2%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.btn{
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: white;
+  background: #00BFFF;
+  cursor: pointer;
+
+  &:hover{
+    background: #007B9E;
+  }
+
+  &:active{
+    transform: scale(0.95);
+  }
+  
+}
+
+.hide{
+  display: none;
+}
+
+
+@media print {
+  .btnDiv{
+    display: none;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 786px){
+  .content{
+    flex-direction: column;
+  }
+
+  aside, .main-content {
+    width: 100%;
+  }
+}
